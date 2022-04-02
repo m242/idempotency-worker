@@ -13,3 +13,10 @@ $ curl -D - -X POST -H "Idempotency-Key: foo" http://localhost:8787/ (whatever r
 
 On a cache miss for the idempotency key, you'll get back the current time.
 On a cache hit, you'll get the original response (and time) back.
+
+
+## Example
+
+```
+$ curl -D - -X POST -H "Idempotency-Key: foo" https://mark.run/idempotency
+```
