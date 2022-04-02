@@ -5,7 +5,7 @@ A simple proof of concept of a Cloudflare worker that caches based on the Idempo
 Usage: 
 
 1. Edit wrangler.toml to point at your Cloudflare account and route
-2. Publish this to your workers.dev site, then run this curl:
+2. Run "wrangler dev", then run this curl:
 
 ```
 $ curl -D - -X POST -H "Idempotency-Key: foo" http://localhost:8787/ (whatever route you chose)
